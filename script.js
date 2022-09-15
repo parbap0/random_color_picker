@@ -48,8 +48,8 @@ const generateHexCode = function () {
 };
 
 button.addEventListener("click", function () {
-  body.style.background = generateHexCode();
   oldColor = generateHexCode();
+  body.style.background = oldColor;
   console.log(oldColor);
   text.innerHTML = `Current background color is ${oldColor}`;
 });
